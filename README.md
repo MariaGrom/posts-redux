@@ -9,7 +9,7 @@
 
 ### Запуск локально
 1. Скачать или склонировать себе файлы из репозитория: https://github.com/MariaGrom/posts-redux
-2. Установить зависимости командой: npm istall react-scripts
+2. Установить зависимости командой: npm install react-scripts
 3. Запустить проект командой: npm run start
 
 #### Улучшить
