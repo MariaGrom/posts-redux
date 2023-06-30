@@ -9,7 +9,7 @@ function App() {
     <div className="container pt-3">
       <div className="row">
         <div className="col-md-10 offset-md-10">
-         <ThemeButton />
+          <ThemeButton />
         </div>
       </div>
 
@@ -24,7 +24,7 @@ function App() {
           <Posts />
         </div>
         <div className="col">
-          <h2>Асинхронные посты</h2>
+          <h2>Асинхронные посты-тосты</h2>
           <FetchedPosts />
         </div>
       </div>
