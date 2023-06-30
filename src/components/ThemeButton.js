@@ -1,14 +1,17 @@
-import React from "react"
-import { changeTheme } from "./redux/action"
-import { useDispatch } from "react-redux"
+import React from 'react';
+import { changeTheme } from './redux/action';
+import { useDispatch } from 'react-redux';
 
 export default () => {
-    const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-
-    return <button 
-    type="button" 
-    className="btn btn-dark"
-    onClick={()=>dispatch(changeTheme())}
-    >Сменить тему</button>
-}
+  return (
+    <button
+      type="button"
+      className="btn btn-dark"
+      onClick={() => dispatch(changeTheme())}
+    >
+      Сменить тему
+    </button>
+  );
+};
