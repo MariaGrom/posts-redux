@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { compose, applyMiddleware, legacy_createStore as createStore } from 'redux'
+import {
+  compose,
+  applyMiddleware,
+  legacy_createStore as createStore,
+} from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import './index.css';
@@ -10,20 +14,21 @@ import reportWebVitals from './reportWebVitals';
 import { rootReducer } from './components/redux/rootReducer';
 import { forbiddenWordsMiddleware } from './components/redux/middleware';
 
-
-const store = createStore(rootReducer, compose (
-  applyMiddleware(thunk, forbiddenWordsMiddleware),
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-));
-
+const store = createStore(
+  rootReducer,
+  compose(
+    applyMiddleware(thunk, forbiddenWordsMiddleware),
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  )
+);
 
 const app = (
   // <React.StrictMode>
-    <Provider store ={store}>
-      <App />
-    </Provider>
+  <Provider store={store}>
+    <App />
+  </Provider>
   // </React.StrictMode>
-)
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(app);

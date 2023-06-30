@@ -24,7 +24,7 @@ function App() {
           <Posts />
         </div>
         <div className="col">
-          <h2>Асинхронные посты-тосты! и коты !</h2>
+          <h2>Асинхронные посты</h2>
           <FetchedPosts />
         </div>
       </div>
