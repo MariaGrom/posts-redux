@@ -2,7 +2,7 @@ import './App.css';
 import FetchedPosts from './components/FetchedPosts';
 import PostForm from './components/PostForm';
 import Posts from './components/Posts';
-import ThemeButton from './components/ThemeButton';
+import { ThemeButton } from './components/ThemeButton';
 
 function App() {
   return (
