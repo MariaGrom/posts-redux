@@ -1,4 +1,4 @@
-import { CREATE_POST, FETCH_POST, HIDE_ALERT, HIDE_LOADER, SHOW_ALERT, SHOW_LOADER } from "./types";
+import { CHANGE_THEME, CREATE_POST, FETCH_POST, HIDE_ALERT, HIDE_LOADER, SHOW_ALERT, SHOW_LOADER } from "./types";
 
 export function createPost(post) {
     return {
@@ -50,7 +50,12 @@ export function fetchPosts() {
             dispatch(showAlert('Что-то пошло не так'))
             dispatch(hideLoader())
         }
+    }
+}
 
-
+export function changeTheme(){
+    console.log('click')
+    return {
+        type: CHANGE_THEME
     }
 }
