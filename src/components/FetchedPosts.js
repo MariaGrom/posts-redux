@@ -1,10 +1,10 @@
 import React from 'react';
-import Post from './Post';
+import { Post } from './Post';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPosts } from './redux/action';
 import { Loader } from './Loader';
 
-export default () => {
+export const FetchedPosts = () => {
   const dispatch = useDispatch();
   const posts = useSelector((state) => {
     return state.posts.fetchedPosts;

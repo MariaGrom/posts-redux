@@ -1,8 +1,8 @@
 import './App.css';
-import FetchedPosts from './components/FetchedPosts';
+import { FetchedPosts } from './components/FetchedPosts';
 import PostForm from './components/PostForm';
 import Posts from './components/Posts';
-import ThemeButton from './components/ThemeButton';
+import { ThemeButton } from './components/ThemeButton';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <Posts />
         </div>
         <div className="col">
-          <h2>Асинхронные посты-тосты</h2>
+          <h2>Асинхронные посты</h2>
           <FetchedPosts />
         </div>
       </div>
