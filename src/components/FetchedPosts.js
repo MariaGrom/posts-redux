@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchPosts } from './redux/action';
 import { Loader } from './Loader';
 
-export default () => {
+export const FetchedPost = () => {
   const dispatch = useDispatch();
   const posts = useSelector((state) => {
     return state.posts.fetchedPosts;
