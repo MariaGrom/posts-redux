@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Post from './Post';
+import { Post } from './Post';
 
 const Posts = ({ syncPosts }) => {
   if (!syncPosts.length) {
